@@ -1,0 +1,14 @@
+package chapter09;
+
+import java.time.LocalDate;
+import java.time.Period;
+
+public class Ex29 {
+	public static void main(String[] args) {
+		LocalDate now = LocalDate.now();
+		LocalDate target = now.plusDays(10);
+		Period x = now.until(target);
+		System.out.println(x.getDays());
+	}
+
+}
